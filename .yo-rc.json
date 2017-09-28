@@ -1,7 +1,7 @@
 {
   "generator-angular-dft": {
     "user": "Sajera",
-    "appName": "js_07_17",
+    "appName": "app",
     "appVersion": "0.0.1",
     "cssFramework": null,
     "modules": {

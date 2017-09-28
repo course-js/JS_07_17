@@ -1,6 +1,6 @@
 {
     "author": "Sajera",
-    "name": "js_07_17",
+    "name": "app",
     "version": "0.0.1",
     "dependencies": {
         "s-is": "^1.4.12",

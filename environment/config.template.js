@@ -10,6 +10,6 @@ angular
     /**
      * app configuration from enveronment
      */
-    .module('exampleapp')
+    .module('app')
 
     .constant( 'config', {{config}});
