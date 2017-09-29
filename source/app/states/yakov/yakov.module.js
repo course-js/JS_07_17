@@ -3,24 +3,24 @@
 
 angular
 
-    .module('layout.yakov', [ // module назван ожидаемо
+    .module('layout.yakov', [ 
 
     ])
 
     .config( function ( $stateProvider ) {
 
-        $stateProvider.state('layout.yakov', { // state назван ожидаемо
-            url: '/yakov', // url тоже описано ожидаемо
-            templateUrl: 'app/states/yakov/yakov.html', // шаблон поключен верно
-            controller: 'homeController', // контроллер используеться то же самы что и для home тебе нужно сделать свой контроллер для свое страници
+        $stateProvider.state('layout.yakov', { 
+            url: '/yakov', 
+            templateUrl: 'app/states/yakov/yakov.html', 
+            controller: 'yakovController', 
             /**
             *
             */
             resolve: {
-                // resolve это убъект уникальных для этой страници зависимостей
-                // имена полей обьектов могут быть затянуты в контроллер твоей страници как зависимость
-                // обычно используеться для выполнения важных для страници запросов
-                // без которых страницу будет невозможно нарисовать
+                // resolve is an object, unique for that page dependencies
+                // the names of objects fields can be pulled into controller
+                // usually used to execution of important requests on that page, 
+                // without which the page cannot be draw
                 fromRoot: function ( user ) {
                     return {user: user, prepered: true};
                 }
