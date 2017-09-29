@@ -2,4 +2,4 @@
 
 ## project for students
 
-** Этот проект предназначен для получения базовых знаний библиотеки angular.js. И подходы к созданию SPA для Интернета с использованием таких технологий, как GIT, BOWER, NPM, GULP.
+** This project is designed to get the basic knowledge of the library angular.js. And the approaches to creating a SPA for the Internet using technologies such as GIT, BOWER, NPM, GULP.
