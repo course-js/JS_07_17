@@ -1,14 +1,14 @@
 {
     "author": "Sajera",
     "name": "app",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "contributors": [
         {
             "name": "Sajera",
             "email": "allsajera@gmail.com"
         }
     ],
-    "description": "description text",
+    "description": "This project is designed to obtain basic knowledge of the library angular.js. And the approaches to building a SPA for the web",
     "dependencies": {},
     "devDependencies": {
         "browser-sync": "^2.14.3",
