@@ -7,7 +7,8 @@ angular
      * structure dependencies application
      */
     .module('app.layout', [
-        'layout.home'
+        'layout.home',
+        'layout.yakov'
     ])
 
     .config( function ( $stateProvider ) {
