@@ -14,7 +14,11 @@ angular
 
     .constant( 'config', {
     "initSourceMap": true,
+<<<<<<< HEAD
     "timestamp": "2017-09-29T18:06:32.087Z",
+=======
+    "timestamp": "2017-09-30T09:02:54.821Z",
+>>>>>>> origin/dimaPage
     "version": "0.0.1",
     "baseUrl": "/",
     "production": false,
