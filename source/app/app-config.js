@@ -14,7 +14,7 @@ angular
 
     .constant( 'config', {
     "initSourceMap": true,
-    "timestamp": "2017-09-29T11:22:04.843Z",
+    "timestamp": "2017-09-30T09:02:54.821Z",
     "version": "0.0.1",
     "baseUrl": "/",
     "production": false,
