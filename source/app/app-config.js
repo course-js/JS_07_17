@@ -14,8 +14,8 @@ angular
 
     .constant( 'config', {
     "initSourceMap": true,
-    "timestamp": "2017-09-30T09:02:54.821Z",
-    "version": "0.0.1",
+    "timestamp": "2017-09-30T12:23:10.979Z",
+    "version": "0.0.2",
     "baseUrl": "/",
     "production": false,
     "apiPath": "api/2",
