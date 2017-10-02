@@ -2,36 +2,31 @@
     <nav class="navbar navbar-static-top navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-brand" data-toggle="collapse" data-target="#HomeNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" target="_blank" href="https://github.com/ekalosha/angular-generator">
                     <span class="glyphicon glyphicon-home"></span>
                     Angular-dft
                 </a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <div class="collapse navbar-collapse" id="HomeNavbar">
                 <ul class="nav navbar-nav">
                     <li data-ui-sref-active="active">
                         <a href="javascript:void(0)" data-ui-sref="layout.home">Home</a>
                     </li>
-                    <!-- <li data-ui-sref-active="active">
-                        <a href="javascript:void(0)" data-ui-sref="layout.yakov">Yakov</a>
-                    </li> -->
                     <li class="dropdown">
                         <a id="drop1" href="javascript:void(0)" class="dropdown-toggle"
                         data-toggle="dropdown">Who? <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu nav">
-                            <li><a href="javascript:void(0)" data-ui-sref="layout.yakov">Yakov</a></li>
-                            <li class="divider"></li>
-                            <li><a href="javascript:void(0)" data-ui-sref="layout.dima">Dima</a></li>
-                            <li class="divider"></li>
-                            <li><a href="javascript:void(0)" data-ui-sref="layout.nakhaev">nakhaev</a></li>
+                            <li><a data-ui-sref="layout.yakov">Yakov</a></li>
+                            <li><a data-ui-sref="layout.dima">Dima</a></li>
+                            <li><a data-ui-sref="layout.fedoseev">Fedoseev</a></li>
+                            <li><a data-ui-sref="layout.nakhaev">Nakhaev</a></li>
                         </ul>
-                    </li>
-                    <!-- <li data-ui-sref-active="active">
-                        <a href="javascript:void(0)" data-ui-sref="layout.dima">Dima</a>
-                    </li> -->
-                    <li data-ui-sref-active="active">
-                        <a href="javascript:void(0)" data-ui-sref="layout.dima">Dima</a>
                     </li>
                     <li data-ui-sref-active="active">
                         <a href="javascript:void(0)" data-ng-click="root.sayNo('About')">About</a>
