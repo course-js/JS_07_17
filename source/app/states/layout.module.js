@@ -9,7 +9,8 @@ angular
     .module('app.layout', [
         'layout.home',
         'layout.yakov',
-        'layout.dima'
+        'layout.dima',
+        'layout.nakhaev'
     ])
 
     .config( function ( $stateProvider ) {
