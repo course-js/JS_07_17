@@ -10,7 +10,7 @@ angular
         'layout.home',
         'layout.yakov',
         'layout.dima',
-        'layout.fedoseev'
+        'layout.fedoseev',
         'layout.nakhaev',
         'layout.alina'
     ])
