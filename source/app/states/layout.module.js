@@ -8,7 +8,11 @@ angular
      */
     .module('app.layout', [
         'layout.home',
-        'layout.yakov'
+        'layout.yakov',
+        'layout.dima',
+        'layout.fedoseev',
+        'layout.nakhaev',
+        'layout.alina'
     ])
 
     .config( function ( $stateProvider ) {
