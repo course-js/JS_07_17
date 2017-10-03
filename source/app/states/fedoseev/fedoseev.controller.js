@@ -3,8 +3,9 @@
 
 angular
 
-    .module('layout.yakov') 
-    .controller('yakovController', function ( $scope, $log, fromRoot ) {
+    .module('layout.fedoseev')
+
+    .controller('fedoseevController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
             connections: [

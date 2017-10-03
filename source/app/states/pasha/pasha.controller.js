@@ -3,8 +3,8 @@
 
 angular
 
-    .module('layout.yakov') 
-    .controller('yakovController', function ( $scope, $log, fromRoot ) {
+    .module('layout.pasha') 
+    .controller('pashaController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
             connections: [

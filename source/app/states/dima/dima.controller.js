@@ -3,8 +3,9 @@
 
 angular
 
-    .module('layout.yakov') 
-    .controller('yakovController', function ( $scope, $log, fromRoot ) {
+    .module('layout.dima')
+
+    .controller('dimaController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
             connections: [

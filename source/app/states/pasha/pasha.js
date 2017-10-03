@@ -3,16 +3,16 @@
 
 angular
 
-    .module('layout.yakov', [ 
+    .module('layout.pasha', [ 
 
     ])
 
     .config( function ( $stateProvider ) {
 
-        $stateProvider.state('layout.yakov', { 
-            url: '/yakov', 
-            templateUrl: 'app/states/yakov/yakov.html', 
-            controller: 'yakovController', 
+        $stateProvider.state('layout.pasha', { 
+            url: '/pasha', 
+            templateUrl: 'app/states/pasha/pasha.html', 
+            controller: 'pashaController', 
             /**
             *
             */
