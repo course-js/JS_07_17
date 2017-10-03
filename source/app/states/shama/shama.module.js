@@ -19,7 +19,7 @@ angular
             resolve: {
                 // get and prepere user from root
                 fromRoot: function ( user ) {
-                    return {user: shama, prepered: true};
+                    return {user: user, prepered: true};
                 }
             }
         });
