@@ -9,7 +9,10 @@ angular
     .module('app.layout', [
         'layout.home',
         'layout.yakov',
-        'layout.dima'
+        'layout.dima',
+        'layout.fedoseev',
+        'layout.nakhaev',
+        'layout.alina'
     ])
 
     .config( function ( $stateProvider ) {
