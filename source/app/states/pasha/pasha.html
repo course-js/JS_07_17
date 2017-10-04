@@ -1,25 +1,113 @@
+<script>
+        var mas = ["../../../assets/images/pasha_page/1.jpg","../../../assets/images/pasha_page/2.jpg","../../../assets/images/pasha_page/3.jpg","../../../assets/images/pasha_page/4.jpg","../../../assets/images/pasha_page/5.jpg"]
+        var to = -1; 
+
+        function right_arrow() {
+ 
+        var obj = document.getElementById("img");
+        if (to < mas.length-1)  to++ 
+        else
+         to = 0;
+            obj.src = mas[to];   
+            setCookie("foo", mas[to] , "", "/");
+        }
+
+        function left_arrow() {  
+
+            var obj = document.getElementById("img");
+            if (to > 0) to--;
+            else
+            to = mas.length-1;
+            obj.src = mas[to];    
+            setCookie("foo", mas[to] , "", "/");
+        }
+
+        function setCookie(name, value, expires, path, domain, secure) { 
+
+            if (!name || !value) return false;
+            var str = name + '=' + encodeURIComponent(value);
+            if (expires) str += '; expires=' + expires.toGMTString();
+            if (path)    str += '; path=' + path;
+            if (domain)  str += '; domain=' + domain;
+            if (secure)  str += '; secure';
+            document.cookie = str;
+            return true;
+        }
+     
+        function getCookie(name) { 
+            
+            var pattern = "(?:; )?" + name + "=([^;]*);?";
+            var regexp  = new RegExp(pattern);       
+            if (regexp.test(document.cookie))
+            return decodeURIComponent(RegExp["$1"]);  
+            return false;
+        }
+
+        function Load() {  
+
+            var cook_val = getCookie("foo");  
+            for (var i = 0 ; i < mas.length; i++)   {
+
+                if (mas[i] == cook_val)  { 
+     
+                    document.getElementById("img").src = mas[i]; 
+                    to = i;  
+                    break 
+                }   
+            }       
+        } 
+        </script>
 <div class="container">
-    <div class="jumbotron text-center">
-        <h1>'HAllo, 'HAllo! This is Pasha?</h1>
-        <p class="lead">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Yeoman.svg/256px-Yeoman.svg.png" alt="I'm Yeoman"><br>
-            angular-dft alwaes a pleasure scaffolding your application.
-        </p>
-
-        <p>With many thanks to the contributions of Yeoman.</p>
-
-        <p>Also with great gratitude to the project connected the following technologies.</p>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4" data-ng-repeat="item in vm.connections | orderBy:'rank' ">
-            <div class="thumbnail">
-                <img class="pull-right" width="90" data-ng-src="{{ item.logo }}" alt="{{ awesomeThing.title }}">
-                <div class="caption">
-                    <h3><a target="_blank" data-ng-href="{{item.url}}">{{ item.name }}</a></h3>
-                    <p>{{ item.description }}</p>
-                </div>
+    <header>  
+        <div class="navigate">
+            <div class="logo">
+                <a href="#home">PASHA SHOP</a>
+            </div>
+            <div class="menu-bar">
+                <a href="#home">HOME</a>
+                <a href="#">WOMEN</a>
+                <a href="#">MEN</a>
+                <a href="#">OTHER</a>
+                <a href="#">PURCHASE</a>
+            </div>
+            <form class="search" action="" method="post" >
+                <input type="search" name="" placeholder="Search" class="input" />
+                <input type="submit" name="" value="" class="submit" />
+            </form>
+            <a class="basket order1" href=""><img src="../../../assets/images/pasha_page/order1.png" alt="order"></a>
+            <a class="basket order2" href=""><img src="../../../assets/images/pasha_page/order2.png" alt="basket"></a>
             </div>
         </div>
-    </div>
+        <div class="slider">
+            <img src = "../../../assets/images/pasha_page/1.jpg" width = "1350" height = "640"  id = "img" > </img> <br/>
+            <img id="left" src = "../../../assets/images/pasha_page/nav_left.png"   onClick = "javascript: left_arrow()" />
+            <img id="right" src = "../../../assets/images/pasha_page/nav_right.png"  onClick = "javascript: right_arrow()" />
+        </div>
+        <div></div>
+    </header>
+    <section> 
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section> 
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div> 
+    </section>
+    <section> 
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
 
 </div>
