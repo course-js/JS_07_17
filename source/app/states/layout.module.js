@@ -12,7 +12,8 @@ angular
         'layout.dima',
         'layout.fedoseev',
         'layout.nakhaev',
-        'layout.alina'
+        'layout.alina',
+        'layout.denisT'
     ])
 
     .config( function ( $stateProvider ) {
