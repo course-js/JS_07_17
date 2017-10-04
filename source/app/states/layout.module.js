@@ -12,6 +12,7 @@ angular
         'layout.dima',
         'layout.fedoseev',
         'layout.nakhaev',
+        'layout.pasha',
         'layout.alina'
     ])
 
