@@ -3,14 +3,11 @@
 
 angular
 
-    .module('layout.dima')
+    .module('layout.fedoseev')
 
-    .controller('dimaController', function ( $scope, $log, fromRoot ) {
+    .controller('fedoseevController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
-
-                some: "TestTesTest",
-
             connections: [
                 {
                     rank: 1,
