@@ -7,6 +7,7 @@ angular
      * structure dependencies application
      */
     .module('app.layout', [
+        'layout.vyshkevich',
         'layout.home',
         'layout.yakov',
         'layout.dima',
