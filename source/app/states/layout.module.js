@@ -14,6 +14,7 @@ angular
         'layout.fedoseev',
         'layout.nakhaev',
         'layout.alina',
+        'layout.shama',
         'layout.Artem'
     ])
 
