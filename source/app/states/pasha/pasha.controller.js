@@ -3,14 +3,10 @@
 
 angular
 
-    .module('layout.dima')
-
-    .controller('dimaController', function ( $scope, $log, fromRoot ) {
+    .module('layout.pasha') 
+    .controller('pashaController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
-
-                some: "TestTesTest",
-
             connections: [
                 {
                     rank: 1,
