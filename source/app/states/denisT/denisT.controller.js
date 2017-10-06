@@ -3,11 +3,9 @@
 
 angular
 
-    .module('layout.yakov') // модуль ты взял то который сам создал для этой страници это правильно
-    // а вот контроллер не переименовал как следствие один из контроллеров с таким именем перепишет другой
-    // и для обоих страниц и твоей и home будет один и тот же контроллер
-    // такое тоже может быть нужно но в рамках поставленной задачи это неправильно
-    .controller('homeController', function ( $scope, $log, fromRoot ) {
+    .module('layout.denisT')
+
+    .controller('denisTController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
             connections: [

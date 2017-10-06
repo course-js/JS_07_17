@@ -7,12 +7,16 @@ angular
      * structure dependencies application
      */
     .module('app.layout', [
+        'layout.vyshkevich',
         'layout.home',
         'layout.yakov',
         'layout.dima',
         'layout.fedoseev',
         'layout.nakhaev',
-        'layout.alina'
+        'layout.alina',
+        'layout.shama',
+        'layout.Artem',
+        'layout.denisT',
     ])
 
     .config( function ( $stateProvider ) {
