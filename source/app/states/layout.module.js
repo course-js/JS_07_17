@@ -17,6 +17,7 @@ angular
         'layout.shama',
         'layout.Artem',
         'layout.denisT',
+        'layout.pasha',
     ])
 
     .config( function ( $stateProvider ) {
