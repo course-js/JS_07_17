@@ -3,14 +3,11 @@
 
 angular
 
-    .module('layout.dima')
+    .module('layout.vyshkevich')
 
-    .controller('dimaController', function ( $scope, $log, fromRoot ) {
+    .controller('vyshkevichController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
-
-                some: "TestTesTest",
-
             connections: [
                 {
                     rank: 1,

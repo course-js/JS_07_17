@@ -3,14 +3,11 @@
 
 angular
 
-    .module('layout.dima')
+    .module('layout.shama')
 
-    .controller('dimaController', function ( $scope, $log, fromRoot ) {
+    .controller('shamaController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
-
-                some: "TestTesTest",
-
             connections: [
                 {
                     rank: 1,
