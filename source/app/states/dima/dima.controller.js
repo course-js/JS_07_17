@@ -8,6 +8,9 @@ angular
     .controller('dimaController', function ( $scope, $log, fromRoot ) {
 
         var vm = $scope.vm = {
+
+                some: "TestTesTest",
+
             connections: [
                 {
                     rank: 1,
