@@ -15,7 +15,8 @@ angular
         'layout.nakhaev',
         'layout.alina',
         'layout.shama',
-        'layout.Artem'
+        'layout.Artem',
+        'layout.denisT',
     ])
 
     .config( function ( $stateProvider ) {
