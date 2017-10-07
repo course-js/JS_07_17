@@ -14,5 +14,4 @@ angular
                 toastr.error('Sorry but this state not specified by scaffolding.', state);
             }
         };
-
     });
