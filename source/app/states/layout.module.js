@@ -10,7 +10,10 @@ angular
         'layout.home',
         'layout.yakov',
         'layout.dima',
-        'layout.nakhaev'
+        'layout.fedoseev',
+        'layout.nakhaev',
+        'layout.alina',
+        'layout.aleksandrForm'
     ])
 
     .config( function ( $stateProvider ) {
