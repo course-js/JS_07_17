@@ -1,15 +1,57 @@
 <div id="artemPage" class="container">
 
     <div class="jumbotron text-center">
-        <h1>'Allo, 'Allo! Artem?</h1>
+        <h1>Hello ! : )</h1>
         <p class="lead">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Yeoman.svg/256px-Yeoman.svg.png" alt="I'm Yeoman"><br>
-            angular-dft alwaes a pleasure scaffolding your application.
-        </p>
+            <div class="logo">
 
-        <p>With many thanks to the contributions of Yeoman.</p>
+            </div>
+            
+    </div>
 
-        <p>Also with great gratitude to the project connected the following technologies.</p>
+    <div class="forms">
+
+
+        <form>
+            
+                <h1> Заполните форму </h1>
+                <div class="inputDate">
+                    {{firstName}}
+                    {{lastName}}
+                    
+                </div>
+         <table>
+            <tr>
+                <td>
+                    <P> Введите имя: </P>
+                </td>
+                <td>
+                    <input type="text" ng-model="firstName" placeholder="Введите свое имя">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <P> Введите фамилию: </P>
+                </td>
+                <td>
+                    <input type="text" ng-model="lastName" placeholder="Введите свое фамилию">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <P> Введите пароль: </P>
+                </td>
+                <td>
+                   <input type="text" ng-model="password" placeholder="Введите свое пароль">
+                </td>
+            </tr>
+
+        </table>
+
+                <button> Check!</button>
+                
+           
+        </form>
     </div>
 
     <div class="row">
