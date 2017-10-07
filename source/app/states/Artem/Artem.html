@@ -10,17 +10,23 @@
     </div>
 
     <div class="forms">
+
+
         <form>
             
                 <h1> Заполните форму </h1>
-
+                <div class="inputDate">
+                    {{firstName}}
+                    {{lastName}}
+                    
+                </div>
          <table>
             <tr>
                 <td>
                     <P> Введите имя: </P>
                 </td>
                 <td>
-                    <input type="text" name="firstName">
+                    <input type="text" ng-model="firstName" placeholder="Введите свое имя">
                 </td>
             </tr>
             <tr>
@@ -28,7 +34,7 @@
                     <P> Введите фамилию: </P>
                 </td>
                 <td>
-                    <input type="text" name="lastName">
+                    <input type="text" ng-model="lastName" placeholder="Введите свое фамилию">
                 </td>
             </tr>
             <tr>
@@ -36,16 +42,16 @@
                     <P> Введите пароль: </P>
                 </td>
                 <td>
-                    <input type="password" name="lastName">
+                   <input type="text" ng-model="password" placeholder="Введите свое пароль">
                 </td>
             </tr>
 
         </table>
 
                 <button> Check!</button>
+                
            
         </form>
-
     </div>
 
     <div class="row">
