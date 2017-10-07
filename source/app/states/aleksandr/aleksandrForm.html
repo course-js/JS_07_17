@@ -1,0 +1,44 @@
+
+<div class="container-fluid">
+   <h3>Введите ваши данные и нажмите сохранить</h3>
+   <div id="aleksFormFirst" class="container">
+   
+     <div ng-controller="aleksandrFormController">
+         <input class="col-xs-6" ng-model="vm.nameAleksandrForm" placeholder="Введите ваш логин" />
+          <p class="col-xs-6"> Ваш логин: {{vm.nameAleksandrForm}} </p>
+          <input type="password" class="col-xs-6" ng-model="vm.upassword" placeholder="Введите вашу фамилию"/>
+          <p class="col-xs-6"> Ваш пароль: {{vm.upassword}} </p>
+          <input class="col-xs-6" ng-model="vm.emailUserAleksandrForm" placeholder="Введите ваш email"/>
+          <p class="col-xs-6"> Ваш email: {{vm.emailUserAleksandrForm}} </p>
+          <input class="col-xs-6" ng-model="vm.telefoneAleksandrForm" placeholder="Введите ваш телефон"/>
+          <p class="col-xs-6"> Ваш телефон: {{vm.telefoneAleksandrForm}} </p>
+          
+          <input type="button" class="btn btn-primary" ng-click="vm.setInfoUserAleksandrForm($scope)" value="Сохранить">
+     </div>
+    
+       
+   </div >
+   
+   <h3>Карточка посетителя, сюда сохраняются ваши введенные данные</h3>
+
+   
+   <div id="aleksFormLast" class="container">
+   
+     <h4 class="col-xs-6 inputInfo"></h4>
+      <h4 class="col-xs-6 ">Ваш логин</h4>
+     
+      <br>
+      <h4 class="col-xs-6 inputInfo"></h4>
+      <h4 class="col-xs-6 ">Ваш пароль</h4>
+      
+       <br>
+      
+      <h4 class="col-xs-6 inputInfo"></h4>
+      <h4 class="col-xs-6">Ваш email</h4>
+       <br>
+      
+      <h4 class="col-xs-6 inputInfo"></h4>
+      <h4  class="col-xs-6 ">Ваш телефон</h4> 
+  
+   </div>
+</div>
