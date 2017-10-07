@@ -1,25 +1,152 @@
-<div class="container">
-    <div class="jumbotron text-center">
-        <h1>'Allo, 'Allo! Yakov?</h1>
-        <p class="lead">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Yeoman.svg/256px-Yeoman.svg.png" alt="I'm Yeoman"><br>
-            angular-dft alwaes a pleasure scaffolding your application.
-        </p>
+<script>
+        var mas = ["../../../assets/images/pasha_page/1.jpg","../../../assets/images/pasha_page/2.jpg","../../../assets/images/pasha_page/3.jpg","../../../assets/images/pasha_page/4.jpg","../../../assets/images/pasha_page/5.jpg"]
+        var to = -1; 
 
-        <p>With many thanks to the contributions of Yeoman.</p>
+        function right_arrow() {
+ 
+        var obj = document.getElementById("img");
+        if (to < mas.length-1)  to++ 
+        else
+         to = 0;
+            obj.src = mas[to];   
+            setCookie("foo", mas[to] , "", "/");
+        }
 
-        <p>Also with great gratitude to the project connected the following technologies.</p>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4" data-ng-repeat="item in vm.connections | orderBy:'rank' ">
-            <div class="thumbnail">
-                <img class="pull-right" width="90" data-ng-src="{{ item.logo }}" alt="{{ awesomeThing.title }}">
-                <div class="caption">
-                    <h3><a target="_blank" data-ng-href="{{item.url}}">{{ item.name }}</a></h3>
-                    <p>{{ item.description }}</p>
+        function left_arrow() {  
+
+            var obj = document.getElementById("img");
+            if (to > 0) to--;
+            else
+            to = mas.length-1;
+            obj.src = mas[to];    
+            setCookie("foo", mas[to] , "", "/");
+        }
+
+        function setCookie(name, value, expires, path, domain, secure) { 
+
+            if (!name || !value) return false;
+            var str = name + '=' + encodeURIComponent(value);
+            if (expires) str += '; expires=' + expires.toGMTString();
+            if (path)    str += '; path=' + path;
+            if (domain)  str += '; domain=' + domain;
+            if (secure)  str += '; secure';
+            document.cookie = str;
+            return true;
+        }
+     
+        function getCookie(name) { 
+            
+            var pattern = "(?:; )?" + name + "=([^;]*);?";
+            var regexp  = new RegExp(pattern);       
+            if (regexp.test(document.cookie))
+            return decodeURIComponent(RegExp["$1"]);  
+            return false;
+        }
+
+        function Load() {  
+
+            var cook_val = getCookie("foo");  
+            for (var i = 0 ; i < mas.length; i++)   {
+
+                if (mas[i] == cook_val)  { 
+     
+                    document.getElementById("img").src = mas[i]; 
+                    to = i;  
+                    break 
+                }   
+            }       
+        } 
+        </script>
+<div id="pasha">
+    <div class="container">
+        <header>  
+            <div class="navigate-bar">
+                <div class="logo">
+                    <a href="#home-page">PASHA PAGE</a>
                 </div>
+                <div class="menu-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="#home-page">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#products">PRODUCTS</a></li>
+                            <li><a href="#team">OUR TEAM</a></li>
+                            <li><a href="#contacts">CONTACTS</a></li>
+                        </ul>        
+                    </nav>
+                </div>
+                <form class="search" action="" method="post" >
+                    <input type="search" name="" placeholder="Search" class="input" />
+                    <input type="submit" name="" value="" class="submit" />
+                </form>
+                <a class="social1" href=""><img src="../../../assets/images/pasha_page/fb.png" alt=""></a>
+                <a class="social2" href=""><img src="../../../assets/images/pasha_page/tw.png" alt=""></a>
             </div>
-        </div>
+            <div class="slider">
+                <img src = "../../../assets/images/pasha_page/1.jpg" width="1400" height="640" id ="img" /><br/>
+                <img id="left" src = "../../../assets/images/pasha_page/nav_left.png"   onClick = "javascript: left_arrow()" />
+                <img id="right" src = "../../../assets/images/pasha_page/nav_right.png"  onClick = "javascript: right_arrow()" />
+            </div>
+        </header>
     </div>
-
+    <section class="first-section"> 
+        <div class="about-us">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="block first-col">
+            <img src="../../../assets/images/pasha_page/spaceship-icon.png" width="280" height="280" />
+            <h3>Get Started Instantly</h3>
+            <p>We'll start your project immediately using unique strategies. Just press start and we’ll do the work for you.</p>
+        </div>
+        <div class="block second-col">
+            <img src="../../../assets/images/pasha_page/pc-icon.png" width="280" height="280" />
+            <h3>Design & Development</h3>
+            <p>We can offer you the full packet Design and Development for your project. All of that at a good deal.</p>
+        </div>
+        <div class="block third-col">
+            <img src="../../../assets/images/pasha_page/clock-icon.png" width="280" height="280" />
+            <h3>Always On Time</h3>
+            <p>We know your time is important, so we don’t waste it. All you have to do is set a deadline and we’ll respect it.</p>
+        </div>
+    </section>
+    <section class="second-section"> 
+        <div class="products">
+            <h1>PRODUCTS</h1>
+            <img src="../../../assets/images/pasha_page/ipad.png" width="1000" height="550" /> 
+        </div>
+        <div></div>
+        <div></div>
+        <div></div> 
+    </section>
+    <section class="third-section"> 
+        <div class="team">
+            <h1>OUR TEAM</h1>
+        </div>
+        <div class="team-memb first-memb">
+            <img src="../../../assets/images/pasha_page/team1.png" width="230" height="230" />
+            <h3>Jonathan Kurten</h3>
+            <h3 class="teamred">Founder</h3>
+        </div>
+        <div class="team-memb second-memb">
+            <img src="../../../assets/images/pasha_page/team2.png" width="230" height="230" />
+            <h3>Charlie Waite</h3>
+            <h3 class="teamred">UI & Creative Director</h3>
+        </div>
+        <div class="team-memb third-memb">
+            <img src="../../../assets/images/pasha_page/team3.png" width="230" height="230" />
+            <h3>Frantisek Krivda</h3>
+            <h3 class="teamred">Designer</h3>
+        </div>    
+        <div class="team-memb fourth-memb">
+            <img src="../../../assets/images/pasha_page/team4.png" width="230" height="230" />
+            <h3>Mihai Serban</h3>
+            <h3 class="teamred">Business Development</h3>
+        </div>
+    </section>
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
 </div>

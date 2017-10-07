@@ -3,16 +3,16 @@
 
 angular
 
-    .module('layout.pasha', [ 
+    .module('layout.denisT', [
 
     ])
 
     .config( function ( $stateProvider ) {
 
-        $stateProvider.state('layout.pasha', { 
-            url: '/pasha', 
-            templateUrl: 'app/states/pasha/pasha.html', 
-            controller: 'pashaController', 
+        $stateProvider.state('layout.denisT', {
+            url: '/denisT',
+            templateUrl: 'app/states/denisT/denisT.html',
+            controller: 'denisTController',
             /**
             *
             */
