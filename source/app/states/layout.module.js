@@ -20,7 +20,9 @@ angular
         'layout.fedoseev',
         'layout.nakhaev',
         'layout.vyshkevich',
-        'layout.alina'
+        'layout.alina',
+        'layout.fedoseev_form',
+        
     ])
 
     .config( function ( $stateProvider ) {
