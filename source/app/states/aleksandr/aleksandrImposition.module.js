@@ -3,16 +3,16 @@
 
 angular
 
-    .module('layout.yakov', [ // module назван ожидаемо
+    .module('layout.aleksandrImposition', [ // module назван ожидаемо
 
     ])
 
     .config( function ( $stateProvider ) {
 
-        $stateProvider.state('layout.yakov', { // state назван ожидаемо
-            url: '/yakov', // url тоже описано ожидаемо
-            templateUrl: 'app/states/yakov/yakov.html', // шаблон поключен верно
-            controller: 'homeController', // контроллер используеться то же самы что и для home тебе нужно сделать свой контроллер для свое страници
+        $stateProvider.state('layout.aleksandrImposition', { // state назван ожидаемо
+            url: '/aleksandrImposition', // url тоже описано ожидаемо
+            templateUrl: 'app/states/aleksandr/aleksandrImposition.html', // шаблон поключен верно
+            controller: 'aleksandrImpositionController', // контроллер используеться то же самы что и для home тебе нужно сделать свой контроллер для свое страници
             /**
             *
             */
