@@ -8,10 +8,18 @@ angular
      */
     .module('app.layout', [
         'layout.home',
-        'layout.yakov',
         'layout.dima',
-        'layout.fedoseev'
+        'layout.yakov',
+        'layout.alina',
+        'layout.shama',
+        'layout.Artem',
+        'layout.pasha',
+        'layout.denisT',
         'layout.nakhaev',
+        'layout.dima',
+        'layout.fedoseev',
+        'layout.nakhaev',
+        'layout.vyshkevich',
         'layout.alina'
     ])
 

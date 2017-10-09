@@ -1,0 +1,67 @@
+<div class="container vyshkevich-page">
+
+
+
+
+
+    <div class="jumbotron text-center">
+        <h1>'Hello my friends!</h1>
+        <p class="lead">
+          <br>
+    <!-- begin form -->
+    <form class="form-horizontal ng-valid ng-dirty" role="form">
+    <div class="form-group">
+      <label for="inputName3" class="col-sm-4 control-label">Name</label>
+      <div class="col-sm-8">
+        <input class="form-control ng-valid ng-dirty" id="inputName3" placeholder="Name" ng-model="formInfo.Name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+      <div class="col-sm-8">
+        <input class="form-control ng-valid ng-dirty" id="inputEmail3" placeholder="Email" ng-model="formInfo.Email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
+      <div class="col-sm-8">
+        <input type="password" class="form-control ng-valid ng-dirty" id="inputPassword3" placeholder="Password" ng-model="formInfo.Password">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Sign up</button>
+      </div>
+    </div>
+    <span class="ng-binding">{{formInfo}}</span>
+  </form>
+  <!-- end form -->
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Yeoman.svg/256px-Yeoman.svg.png" alt="I'm Yeoman"><br> -->
+            angular-dft alwaes a pleasure scaffolding your application.
+        </p>
+
+        <p>With many thanks to the contributions of Yeoman.</p>
+
+        <p>Also with great gratitude to the project connected the following technologies.</p>
+        <div id="vid-block" class="video-wrap">
+          <video id="m-vid"  autoplay="" loop="">
+            <source src="app/states/vyshkevich/video/landing.mp4" type="video/mp4;">Ваш браузер не поддерживает видео тег, рекомендуем обновить браузер. <source src="/" type="video/webm;">Ваш браузер не поддерживает видео тег, рекомендуем обновить браузер.
+            </video>
+          </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-6 col-md-4" data-ng-repeat="item in vm.connections | orderBy:'rank' ">
+            <div class="thumbnail">
+                <img class="pull-right" width="90" data-ng-src="{{ item.logo }}" alt="{{ awesomeThing.title }}">
+                <div class="caption">
+                    <h3><a target="_blank" data-ng-href="{{item.url}}">{{ item.name }}</a></h3>
+                    <p>{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

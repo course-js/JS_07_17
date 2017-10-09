@@ -17,10 +17,7 @@ angular
             *
             */
             resolve: {
-                // resolve is an object, unique for that page dependencies
-                // the names of objects fields can be pulled into controller
-                // usually used to execution of important requests on that page, 
-                // without which the page cannot be draw
+                // get and prepere user from root
                 fromRoot: function ( user ) {
                     return {user: user, prepered: true};
                 }
