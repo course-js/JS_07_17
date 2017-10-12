@@ -1,25 +1,169 @@
-<div class="container">
-    <div class="jumbotron text-center">
-        <h1>'Allo, 'Allo! Yakov?</h1>
-        <p class="lead">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Yeoman.svg/256px-Yeoman.svg.png" alt="I'm Yeoman"><br>
-            angular-dft alwaes a pleasure scaffolding your application.
-        </p>
 
-        <p>With many thanks to the contributions of Yeoman.</p>
+<div id="pasha">
+    <div class="container">
+        <header> 
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" id="logo_site" href="#">PASHA PAGE</a>
+                    </div>
+                    <ul class="nav navbar-nav menu-btn">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="javascript://0" onClick="slowScroll ('about-us')">ABOUT</a></li>
+                        <li><a href="">PRODUCTS</a></li>
+                        <li><a href="">OUR TEAM</a></li>
+                        <li><a href="">CONTACTS</a></li> 
+                    </ul>
+                    <form class="search" action="" method="post" >
+                        <input type="search" name="" placeholder="Search" class="input" />
+                        <input type="submit" name="" value="" class="submit" />
+                    </form>
+                        <a class="social1" ><img src="../../../assets/images/pasha_page/fb.png" alt=""></a>
+                        <a class="social2" ><img src="../../../assets/images/pasha_page/tw.png" alt=""></a>
+                </div>
+            </nav>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
 
-        <p>Also with great gratitude to the project connected the following technologies.</p>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4" data-ng-repeat="item in vm.connections | orderBy:'rank' ">
-            <div class="thumbnail">
-                <img class="pull-right" width="90" data-ng-src="{{ item.logo }}" alt="{{ awesomeThing.title }}">
-                <div class="caption">
-                    <h3><a target="_blank" data-ng-href="{{item.url}}">{{ item.name }}</a></h3>
-                    <p>{{ item.description }}</p>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../../../assets/images/pasha_page/1.jpg" >
+                    </div>
+
+                    <div class="item">
+                        <img src="../../../assets/images/pasha_page/2.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img src="../../../assets/images/pasha_page/3.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img src="../../../assets/images/pasha_page/4.jpg">
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
+        </header>
+        <section class="row first-section"> 
+            <div class="about-us">
+                <h1>ABOUT US</h1>
+            </div>
+            <div ng-view class="col-sm-4 col-md-4 col-xs-4 first-col">
+                <img src="../../../assets/images/pasha_page/spaceship-icon.png" width="280" height="280" />
+                <div class="hide-show-left1">
+                    <h3>Get Started Instantly</h3>
+                    <p>We'll start your project immediately using unique strategies. Just press start and we’ll do the work for you.</p>
                 </div>
             </div>
-        </div>
+            <div class="col-sm-4 col-md-4 col-xs-4 second-col">
+                <img src="../../../assets/images/pasha_page/pc-icon.png" width="280" height="280" />
+                <div class="hide-show-left2">
+                    <h3>Design & Development</h3>
+                    <p>We can offer you the full packet Design and Development for your project. All of that at a good deal.</p>
+                </div>    
+            </div>
+            <div class="col-sm-4 col-md-4 col-xs-4 third-col">
+                <img src="../../../assets/images/pasha_page/clock-icon.png" width="280" height="280" />
+                <div class="hide-show-left3">
+                    <h3>Always On Time</h3>
+                    <p>We know your time is important, so we don’t waste it. All you have to do is set a deadline and we’ll respect it.</p>
+                </div>    
+            </div>
+           
+        </section>
+        <section class="second-section"> 
+            <div class="products">
+                <h1>PRODUCTS</h1>
+                <img src="../../../assets/images/pasha_page/ipad.png" width="1000" height="550" /> 
+            </div>
+            <div></div>
+            <div></div>
+            <div></div> 
+        </section>
+        <section class="third-section"> 
+            <div class="team">
+                <h1>OUR TEAM</h1>
+            </div>
+            <div class="team-memb first-memb">
+                <img src="../../../assets/images/pasha_page/team1.png" width="230" height="230" />
+                <h3>Jonathan Kurten</h3>
+                <h3 class="teamred">Founder</h3>
+            </div>
+            <div class="team-memb second-memb">
+                <img src="../../../assets/images/pasha_page/team2.png" width="230" height="230" />
+                <h3>Charlie Waite</h3>
+                <h3 class="teamred">UI & Creative Director</h3>
+            </div>
+            <div class="team-memb third-memb">
+                <img src="../../../assets/images/pasha_page/team3.png" width="230" height="230" />
+                <h3>Frantisek Krivda</h3>
+                <h3 class="teamred">Designer</h3>
+            </div>    
+            <div class="team-memb fourth-memb">
+                <img src="../../../assets/images/pasha_page/team4.png" width="230" height="230" />
+                <h3>Mihai Serban</h3>
+                <h3 class="teamred">Business Development</h3>
+            </div>
+        </section>
+        <footer class="row">
+            <h1>OUR CONTACTS</h1>
+            <div id="socials-fb">
+                <img src="../../../assets/images/pasha_page/socials-fb.png" alt="">
+                <p>FACEBOOK: some_name</p>
+            </div>
+            <div id="socials-tw" >
+                <img src="../../../assets/images/pasha_page/socials-tw.png" alt="">
+                <p>TWITTER: some_name</p>
+            </div>
+            <div id="socials-in">
+                <img src="../../../assets/images/pasha_page/socials-in.png" alt="">
+                <p>INSTAGRAM: some_name</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.6790043826054!2d36.22411378029753!3d50.017371426456585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a1251a02af5b%3A0xd1a8ae49f2a58fdc!2z0L_RgNC-0YHQv9C10LrRgiDQndCw0YPQutC4LCAyMCwg0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1501676658987" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+            <div class="send-message">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">SEND LETTER</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">SEND MESSAGE TO US</h4>
+                            </div>
+                            <div class="modal-body">
+                                <input type="email" class="form-control" placeholder="Email"><br>
+                                <input type="name" class="form-control" placeholder="Name"><br>
+                                <input type="surname" class="form-control" placeholder="Surname"><br>
+                                <input type="submit" class="form-control" value="SEND">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"><p>ALL COPYRIGHT RESERVED TO PASHA PAGE &copy 2017</p></div>
+        </footer>
+        <script>
+            
+        </script>
     </div>
-
 </div>
+
